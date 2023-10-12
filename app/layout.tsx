@@ -3,6 +3,7 @@ import { PropsWithChildren } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
 import { Suspense } from 'react'
+import { Navbar, Footer } from '@/components/components'
 
 const meta = {
   title: 'Delaware Audio Visual | Your audio and visual solution.',
@@ -52,7 +53,9 @@ export default function RootLayout({
         <SupabaseProvider>
           <Suspense fallback='Loading...'>
             <main>
+              <Navbar />
               {children}
+              <Footer />
             </main>
           </Suspense>
         </SupabaseProvider>
