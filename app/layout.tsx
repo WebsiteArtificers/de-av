@@ -8,9 +8,9 @@ import { Navbar, Footer } from '@/components/components'
 const meta = {
   title: 'Delaware Audio Visual | Your audio and visual solution.',
   description: 'Delaware AV is a leading audio-visual solutions provider to the Delaware Valley serving Delaware, Pennsylvania and New Jersey',
-  cardImage: '/images/',
+  cardImage: '@/public/images/delawareAudioVisual.svg',
   robots: 'follow, index',
-  favicon: '/images/',
+  favicon: '/icon.png',
   url: process.env.NEXT_PUBLIC_SITE_URL,
   type: 'website'
 };
@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/" />
+        <link rel="icon" href={meta.favicon} type="image/png" />
       </head>
       <body>
         <SupabaseProvider>
