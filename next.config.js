@@ -1,9 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    postcssLoaderOptions: {
-        postcssOptions: {
-          config: './postcss.config.js',
-        },
+    webpack: (config) => {
+        config.module.rules.push({
+          test: /\.css$/,
+          use: [
+            {
+              loader: 'postcss-loader',
+              options: {
+                postcssOptions: {
+                  config: './postcss.config.js',
+                },
+              },
+            },
+          ],
+        });
+    
+        return config;
     },
 }
 
