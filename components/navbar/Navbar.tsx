@@ -8,7 +8,7 @@ import { Logo } from "@/icons/icons"
 
 export default function Navbar() {
 
-    const isScreenSmall = useMediaQuery('(max-width: 1200px)')
+    const isScreenSmall = useMediaQuery('(max-width: 1000px)')
     const [isOpen, setIsOpen] = useState(false)
 
     const handleHamburgerClick = () => {

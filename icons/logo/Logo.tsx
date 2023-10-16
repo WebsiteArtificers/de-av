@@ -1,6 +1,6 @@
 export default function Logo() {
     return (
-    <svg viewBox="27 90 210 97" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="25 105 160 85" xmlns="http://www.w3.org/2000/svg">
       <g
         fontFamily="System Font"
         fontSize="112.075"

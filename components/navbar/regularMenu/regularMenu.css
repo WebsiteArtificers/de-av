@@ -1,0 +1,11 @@
+.regular__link--container {
+    margin: auto;
+}
+
+.regular__link {
+    color: var(--background);
+    background: none;
+    border: none;
+    font-size: 1.25vw;
+
+}
