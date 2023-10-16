@@ -1,14 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
   --font-family: inter, acumin-pro, sans-serif;
 
-  --text: #001234;
-  --accent-background: #2b3549;
-  --darker-background: #000818;
-  --background: #e6ecf4;
-  --primary: #6A8ABE;
-  --secondary: #ff6e61;
-  --tertiary: #ffa9a1;
-  --accent: #43669c;
+  --text: #010304;
+  --background: #E2F3FF;
+  --primary: #5D9BC6;
+  --secondary: #003356;
+  --accent: #788696;
   --secondary-accent: #d0e1f6;
 }
 
