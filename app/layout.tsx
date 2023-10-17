@@ -16,7 +16,7 @@ const meta = {
 };
 
 export const metadata = {
-  metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
+  metadataBase: meta.url,
   title: meta.title,
   description: meta.description,
   cardImage: meta.cardImage,
