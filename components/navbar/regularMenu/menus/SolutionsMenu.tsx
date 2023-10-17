@@ -22,7 +22,7 @@ export default function Solutions() {
                     <p className='menu__subcontainer--description'>Government</p>
                 </a>
                 <a className='menu__subcontainer--link'>
-                    <h2 className='menu__subcontainer--subheader'>Morey's Pier, NJ</h2>
+                    <h2 className='menu__subcontainer--subheader'>{`Morey's Pier, NJ`}</h2>
                     <p className='menu__subcontainer--description'>Entertainment</p>
                 </a>
                 <a className='menu__subcontainer--link'>
