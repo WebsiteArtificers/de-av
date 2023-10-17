@@ -16,7 +16,6 @@
     "@supabase/auth-helpers-nextjs": "^0.8.1",
     "@supabase/supabase-js": "^2.38.0",
     "@types/node": "20.8.4",
-    "@types/react": "18.2.28",
     "@types/react-dom": "18.2.13",
     "@vercel/analytics": "^1.1.0",
     "dotenv": "^16.3.1",
@@ -33,5 +32,8 @@
     "suspense": "^0.0.48",
     "tailwindcss": "^3.3.3",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.28"
   }
 }
