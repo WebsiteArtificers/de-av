@@ -1,7 +1,17 @@
 import './hamburgerMenu.css'
 import { DownArrow } from "@/icons/icons"
+import { Resources, Expertise, Solutions } from './menus/menus';
+import { useState } from 'react'
 
 export default function SmallScreenMenu() {
+
+    const [showExpertise, setShowExpertise] = useState(false);
+    const [showSolution, setShowSolution] = useState(false);
+    const [showResources, setShowResources] = useState(false);
+    const [isRotatedExpertise, setIsRotatedExpertise] = useState(false);
+    const [isRotatedSolution, setIsRotatedSolution] = useState(false);
+    const [isRotatedResources, setIsRotatedResources] = useState(false);
+
     return (
         <div className='smallScreenMenu__container'>
             <div className='smallScreenMenu__top--container'>
@@ -11,17 +21,53 @@ export default function SmallScreenMenu() {
             <a className='smallScreenMenu__subcontainer'>
                 <button className='smallScreenMenu__button'>Contact Sales</button>
             </a>
-            <div className='smallScreenMenu__subcontainer'>
-                <button className='smallScreenMenu__button'>Resources</button>
-                <DownArrow />
+            <div onClick={() => {
+                setShowResources(!showResources)
+                setShowSolution(false)
+                setShowExpertise(false)
+                setIsRotatedResources(!isRotatedResources);
+                setIsRotatedExpertise(false);
+                setIsRotatedSolution(false);
+            }} className='smallScreenMenu__outer--container'>
+                <div className={`smallScreenMenu__subcontainer ${isRotatedResources ? 'active__background' : ''}`}>
+                    <button className='smallScreenMenu__button'>Resources</button>
+                    <div className={isRotatedResources ? 'rotate' : ''}>
+                        <DownArrow />
+                    </div>
+                </div>
+                { showResources && <Resources /> }
             </div>
-            <div className='smallScreenMenu__subcontainer'>
-                <button className='smallScreenMenu__button'>Solutions</button>
-                <DownArrow />
+            <div onClick={() => {
+                setShowSolution(!showSolution)
+                setShowResources(false)
+                setShowExpertise(false)
+                setIsRotatedSolution(!isRotatedSolution);
+                setIsRotatedResources(false);
+                setIsRotatedExpertise(false);
+            }} className='smallScreenMenu__outer--container'>
+                <div className={`smallScreenMenu__subcontainer ${isRotatedSolution ? 'active__background' : ''}`}>
+                    <button className='smallScreenMenu__button'>Solutions</button>
+                    <div className={isRotatedSolution ? 'rotate' : ''}>
+                        <DownArrow />
+                    </div>
+                </div>
+                { showSolution && <Solutions /> }
             </div>
-            <div className='smallScreenMenu__subcontainer'>
-                <button className='smallScreenMenu__button'>Expertise</button>
-                <DownArrow />
+            <div onClick={() => {
+                setShowExpertise(!showExpertise)
+                setShowResources(false)
+                setShowSolution(false)
+                setIsRotatedExpertise(!isRotatedExpertise);
+                setIsRotatedResources(false);
+                setIsRotatedSolution(false);
+            }} className='smallScreenMenu__outer--container'>
+                <div className={`smallScreenMenu__subcontainer ${isRotatedExpertise ? 'active__background' : ''}`}>
+                    <button className='smallScreenMenu__button'>Expertise</button>
+                    <div className={isRotatedExpertise ? 'rotate' : ''}>
+                        <DownArrow />
+                    </div>
+                </div>
+                {showExpertise && <Expertise /> }
             </div>
         </div>
     )

@@ -35,16 +35,33 @@
     transition: .5s;
     padding: .5vw;
     border-bottom: .1vw solid var(--secondary-accent);
+    transition: .5s;
 }
 
 .smallScreenMenu__subcontainer:hover {
     background: var(--secondary-accent);
 }
 
-.smallScreenMenu__subcontainer svg {
-    width: 1.25vw;
+.smallScreenMenu__subcontainer div {
     margin-left: auto;
+    transition: .5s;
+    width: .80rem;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.smallScreenMenu__subcontainer div svg {
     stroke: var(--text);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.active__background {
+    background: var(--secondary-accent);
+    border-bottom: .1vw solid var(--accent);
 }
 
 .smallScreenMenu__button {
@@ -67,6 +84,6 @@
     }
 
     .smallScreenMenu__subcontainer svg {
-        width: .5rem;
+        width: .7rem;
     }
 }

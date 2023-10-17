@@ -1,6 +1,6 @@
 import './regularMenu.css'
 import { DownArrow } from "@/icons/icons"
-import { Expertise, Solutions, Resources } from './menus/menus';
+import { Expertise, Solutions, Resources } from './menus/menus'
 import { useState } from 'react'
 
 export default function Regular() {

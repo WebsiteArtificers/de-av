@@ -12,6 +12,7 @@
     opacity: .90;
     z-index: 100;
     width: 30vw;
+    border-top: solid .25vw var(--accent);
 }
 
 .menu__subcontainer--header {
