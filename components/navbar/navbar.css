@@ -9,6 +9,8 @@
     padding-right: 5vw;
     opacity: .95;
     border-bottom: .25vw solid var(--primary);
+    position: sticky;
+    top: 0;
 }
 
 .navbar__logo--container {

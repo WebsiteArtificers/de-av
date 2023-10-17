@@ -24,6 +24,7 @@
     vertical-align: center;
     justify-content: center;
     text-decoration: none;
+    position: relative;
 }
 
 .regular__link--container svg {
