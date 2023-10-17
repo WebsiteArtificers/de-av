@@ -1,6 +1,6 @@
 .menu__container {
     position: absolute;
-    top: 3vw;
+    top: 2.5vw;
     display: flex;
     left: .5vw;
     gap: 3vw;
@@ -9,7 +9,7 @@
     border-radius: .25vw;
     box-shadow: .05vw .05vw .25vw var(--text);
     transition: .2s;
-    opacity: .98;
+    opacity: .90;
     z-index: 100;
     width: 30vw;
 }

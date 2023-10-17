@@ -1,24 +1,45 @@
 import './regularMenu.css'
 import { DownArrow } from "@/icons/icons"
 import { Expertise, Solutions, Resources } from './menus/menus';
+import { useState } from 'react'
 
 export default function Regular() {
+
+    const [showExpertise, setShowExpertise] = useState(false);
+    const [showSolution, setShowSolution] = useState(false);
+    const [showResources, setShowResources] = useState(false);
+
     return (
         <>
-            <div className='regular__link--container'>
+            <div
+                className='regular__link--container'
+                onMouseEnter={() => setShowExpertise(true)}
+                onMouseLeave={() => setShowExpertise(false)}
+                onClick={() => setShowExpertise(!showExpertise)}
+            >
                 <button className='regular__link'>Expertise</button>
                 <DownArrow />
-                <Expertise />
+                { showExpertise && <Expertise /> }
             </div>
-            <div className='regular__link--container'>
+            <div
+                className='regular__link--container'
+                onMouseEnter={() => setShowSolution(true)}
+                onMouseLeave={() => setShowSolution(false)}
+                onClick={() => setShowSolution(!showSolution)}
+            >
                 <button className='regular__link'>Solutions</button>
                 <DownArrow />
-                <Solutions />
+                { showSolution && <Solutions /> }
             </div>
-            <div className='regular__link--container'>
+            <div
+                className='regular__link--container'
+                onMouseEnter={() => setShowResources(true)}
+                onMouseLeave={() => setShowResources(false)}
+                onClick={() => setShowResources(!showResources)}
+            >
                 <button className='regular__link'>Resources</button>
                 <DownArrow />
-                <Resources />
+                { showResources && <Resources /> }
             </div>
             <a className='regular__link--container' href='/contact-sales'>
                 <button className='regular__link'>Contact Sales</button>

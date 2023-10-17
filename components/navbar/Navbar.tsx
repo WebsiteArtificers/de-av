@@ -1,22 +1,48 @@
 "use client"
 import './navbar.css'
 import { useState, useEffect } from 'react'
-import { useMediaQuery } from '@material-ui/core'
-import Hamburger from "./hamburgerMenu/HamburgerMenu";
-import Regular from "./regularMenu/RegularMenu";
-import SmallScreenMenu from './hamburgerMenu/SmallScreenMenu';
+import Hamburger from "./hamburgerMenu/HamburgerMenu"
+import Regular from "./regularMenu/RegularMenu"
+import SmallScreenMenu from './hamburgerMenu/SmallScreenMenu'
 import { Logo } from "@/icons/icons"
 
 export default function Navbar() {
 
-    const isScreenSmall = useMediaQuery('(max-width: 1100px)')
-    const [isOpen, setIsOpen] = useState(false)
-
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [windowWidth, setWindowWidth] = useState<number | null>(null);
+    const [isScreenSmall, setScreenSmall] = useState<boolean>(false);
+  
     const handleHamburgerClick = () => {
-        setIsOpen(!isOpen)
-    }
-    
-    useEffect(() => { !isScreenSmall && setIsOpen(false) }, [isScreenSmall])
+      setIsOpen(!isOpen);
+    };
+  
+    useEffect(() => {
+      if (!isScreenSmall) {
+        setIsOpen(false);
+      }
+    }, [isScreenSmall]);
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      
+      handleResize();
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
+    useEffect(() => {
+      if (windowWidth !== null && windowWidth <= 1100) {
+        setScreenSmall(true);
+      } else {
+        setScreenSmall(false);
+      }
+    }, [windowWidth]);
 
     return (
         <>

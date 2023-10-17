@@ -2,7 +2,7 @@ import './menus.css'
 
 export default function Solutions() {
     return (
-        <div className='menu__container hidden'>
+        <div className='menu__container'>
             <div className='menu__subcontainer'>
                 <h1 className='menu__subcontainer--header'>Projects</h1>
                 <a className='menu__subcontainer--link'>
