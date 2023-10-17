@@ -1,0 +1,72 @@
+.hamburger__span svg path {
+    transition: .5s;
+    stroke: var(--background);
+}
+
+.smallScreenMenu__container {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.smallScreenMenu__top--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2vw;
+}
+
+.smallScreenMenu__top--button {
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-weight: 800;
+}
+
+.smallScreenMenu__subcontainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+    padding: .5vw;
+    border-bottom: .1vw solid var(--secondary-accent);
+}
+
+.smallScreenMenu__subcontainer:hover {
+    background: var(--secondary-accent);
+}
+
+.smallScreenMenu__subcontainer svg {
+    width: 1.25vw;
+    margin-left: auto;
+    stroke: var(--text);
+}
+
+.smallScreenMenu__button {
+    font-size: 1.5vw;
+    background: none;
+    outline: none;
+    border: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-weight: 800;
+    color: var(--text);
+}
+
+@media (max-width: 900px) {
+    .smallScreenMenu__top--button {
+        font-size: 1rem;
+    }
+    .smallScreenMenu__button {
+        font-size: 1rem;
+    }
+
+    .smallScreenMenu__subcontainer svg {
+        width: .5rem;
+    }
+}

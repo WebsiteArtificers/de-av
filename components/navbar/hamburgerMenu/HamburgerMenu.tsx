@@ -1,5 +1,19 @@
-export default function Hamburger() {
+import { HamburgerIcon } from "@/icons/icons"
+import './hamburgerMenu.css';
+
+type HamburgerProps = {
+    isOpen: boolean;
+    onClick: () => void;
+};
+
+const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onClick }) => {
     return (
-        <h1>Hamburger Menu</h1>
+        <>
+            <span onClick={onClick} className='hamburger__span'>
+                <HamburgerIcon />
+            </span>
+        </>
     )
 }
+
+export default Hamburger;

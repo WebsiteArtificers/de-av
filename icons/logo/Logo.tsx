@@ -38,8 +38,7 @@ export default function Logo() {
         <path
           d="M-141.751-134.144a7.288 8.033 0 01-7.359 7.928 7.288 8.033 0 01-7.217-8.085 7.288 8.033 0 017.312-7.98 7.288 8.033 0 017.265 8.033"
           fill="#5d9bc6"
-          stroke="#5d9bc6"
-          strokeWidth="3.456"
+          stroke="none"
           transform="matrix(-.95338 -.30176 .51964 -.85438 0 0)"
         />
         <path

@@ -9,6 +9,8 @@
   --background: #E2F3FF;
   --primary: #5D9BC6;
   --secondary: #003356;
+  --tertiary: #7961d0;
+  --tertiary-accent: rgb(0, 69, 116);
   --accent: #788696;
   --secondary-accent: #d0e1f6;
 }
