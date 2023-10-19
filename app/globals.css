@@ -9,11 +9,17 @@
   --background: #E2F3FF;
   --darker-background: #000f17;
   --primary: #5D9BC6;
+  --accent: #788696;
   --secondary: #003356;
+  --secondary-accent: #b2cded;
   --tertiary: #7961d0;
   --tertiary-accent: rgb(0, 69, 116);
-  --accent: #788696;
-  --secondary-accent: #d0e1f6;
+  --quaternary: #006265;
+  --quaternary-accent: #66b2b5;
+  --black: #000517;
+
+  --gradient-purple: linear-gradient(to right, var(--tertiary), var(--primary));
+  --gradient-dark-blue: linear-gradient(to right, #000f17, #003356);
 }
 
 * {
@@ -72,5 +78,26 @@ button {
 }
 
 .button__tertiary:hover {
+  box-shadow: .1vw .1vw 1vw var(--tertiary);
+}
+
+.button__quaternary {
+  color: var(--text);
+  background: var(--secondary-accent);
+  border: .15vw solid var(--secondary-accent);
+}
+
+.button__quaternary:hover {
+  color: var(--quaternary);
+  box-shadow: .1vw .1vw 1vw var(--quaternary-accent);
+}
+
+.button__quinary {
+  background: linear-gradient(to right, var(--tertiary), var(--primary));
+  border: .15vw solid linear-gradient(to right, var(--tertiary), var(--primary));
+  color: var(--text);
+}
+
+.button__quinary:hover {
   box-shadow: .1vw .1vw 1vw var(--tertiary);
 }

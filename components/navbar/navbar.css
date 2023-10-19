@@ -3,11 +3,10 @@
     justify-content: center;
     vertical-align: center;
     flex-grow: 1;
-    background: var(--secondary);
+    background: var(--black);
     gap: 4vw;
     padding-left: 5vw;
     padding-right: 5vw;
-    opacity: .95;
     border-bottom: .25vw solid var(--primary);
     position: sticky;
     top: 0;
@@ -29,7 +28,7 @@
 }
 
 .navbar__logo--container svg:hover {
-    background: var(--tertiary);
+    background: var(--secondary-accent);
 }
 
 .navbar__links--container {

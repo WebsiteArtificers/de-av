@@ -1,0 +1,62 @@
+.footerComponent__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+}
+
+.footerComponent__header {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+[data-company] {
+    color: var(--primary);
+}
+
+[data-product] {
+    color: var(--secondary);
+}
+
+[data-resources] {
+    color: var(--tertiary);
+}
+
+[data-stayConnected] {
+    color: var(--quaternary-accent);
+}
+
+.footerComponent__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.footerComponent__link {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.creator__container {
+    text-align: center;
+}
+
+.creator__header {
+    font-size: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    font-weight: 400;
+    color: var(--background);
+}
+
+.creator__header a {
+    all: unset;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--accent);
+    transition: .5s;
+}
+
+.creator__header a:hover {
+    color: var(--tertiary);
+}
