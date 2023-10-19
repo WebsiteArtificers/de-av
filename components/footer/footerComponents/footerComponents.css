@@ -33,8 +33,26 @@
 }
 
 .footerComponent__link {
+    all: unset;
+    color: var(--accent);
+    cursor: pointer;
     font-size: 1.5vw;
-    font-weight: 300;
+    font-weight: 400;
+    transition: .5s;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: .5vw;
+}
+
+.footerComponent__link svg {
+    width: 1.5vw;
+    fill: var(--accent);
+    transition: .5s;
+}
+
+.footerComponent__link:hover > svg {
+    fill: var(--text);
 }
 
 .creator__container {

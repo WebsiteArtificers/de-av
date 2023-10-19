@@ -1,4 +1,5 @@
 import './footerComponents.css'
+import { Facebook, Google, LinkedIn, Email } from '@/icons/icons'
 
 export default function StayConnected() {
     return (
@@ -7,22 +8,22 @@ export default function StayConnected() {
             <ul className='footerComponent__ul'>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Contact Customer Service
+                        <Facebook />Facebook
                     </a>
                 </li>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Terms of Service
+                        <LinkedIn />LinkedIn
                     </a>
                 </li>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Privacy Policy
+                        <Google />Google
                     </a>
                 </li>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Accessibility Statement
+                        <Email />Newsletter
                     </a>
                 </li>
             </ul>

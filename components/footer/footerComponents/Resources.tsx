@@ -7,22 +7,22 @@ export default function Resources() {
             <ul className='footerComponent__ul'>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Contact Customer Service
+                        Blog
                     </a>
                 </li>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Terms of Service
+                        Partners
                     </a>
                 </li>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Privacy Policy
+                        Schedule a Meeting
                     </a>
                 </li>
                 <li className='footerComponent__li'>
                     <a className='footerComponent__link'>
-                        Accessibility Statement
+                        Talk to Sales
                     </a>
                 </li>
             </ul>
