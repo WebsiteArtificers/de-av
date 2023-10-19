@@ -1,7 +1,11 @@
+"use client"
 import './partners.css'
+
 
 export default function Partners() {
     return (
-        <h1>Partners</h1>
+        <div className='partners__container'>
+
+        </div>
     )
 }
