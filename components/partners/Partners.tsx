@@ -4,11 +4,10 @@ import { client, partners } from '@/sanity/lib/client';
 import { urlForImage } from '@/sanity/lib/image';
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import Image from 'next/image';
 
 type Partnership = {
     isSVG: boolean;
-    logo: Image_2;
+    logo: any;
     company: string;
     url: string;
 };
