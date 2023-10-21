@@ -33,6 +33,10 @@ html {
   background: var(--background);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: var(--accent);
   cursor: pointer;
