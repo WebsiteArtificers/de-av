@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 type Partnership = {
     isSVG: boolean;
-    logo: string;
+    logo: Image_2;
     company: string;
     url: string;
 };
