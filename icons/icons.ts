@@ -5,3 +5,6 @@ export { default as Email } from './social/Email';
 export { default as Facebook } from './social/Facebook';
 export { default as Google } from './social/Google';
 export { default as LinkedIn } from './social/LinkedIn';
+export { default as Audio } from './audio/Audio';
+export { default as Visual } from './visual/Visual';
+export { default as Maintenance } from './maintenance/Maintenance';

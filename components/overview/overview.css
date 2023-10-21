@@ -1,0 +1,19 @@
+.overview__container {
+    background: var(--secondary);
+    padding-top: 3vw;
+}
+
+.overview__header {
+    padding-bottom: 3vw;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 100;
+    color: var(--primary)
+}
+
+.overview__subheader {
+    text-align: center;
+    font-size: 2vw;
+    color: var(--tertiary);
+    font-weight: 800;
+}

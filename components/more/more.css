@@ -1,0 +1,42 @@
+.more__container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+}
+
+.more__header {
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 3vw;
+    color: var(--text);
+}
+
+.more__header span {
+    font-weight: 800;
+}
+
+.more__paragraph {
+    color: var(--text);
+    font-size: 1.25vw;
+    line-height: 1.75vw;
+    font-weight: 200;
+}
+
+.more__paragraph span {
+    font-weight: 800;
+    color: var(--secondary);
+}
+
+.more__subcontainer {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    gap: 1vw;
+    margin-top: 1.5vw; 
+}
+
+.more__button {
+    font-size: 1.15vw;
+}

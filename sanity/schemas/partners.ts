@@ -12,7 +12,6 @@ export default defineType({
       title: 'Name of Company',
       type: 'string',
     }),
-
     defineField({
       name: 'slug',
       title: 'Slug',
@@ -22,7 +21,6 @@ export default defineType({
         maxLength: 96,
       },
     }),
-
     defineField({
         name: 'logo',
         title: 'Logo',
@@ -31,24 +29,32 @@ export default defineType({
           hotspot: true,
         },
     }),
-
+    {
+      name: 'isSVG',
+      title: 'Is the image an SVG file?',
+      type: 'boolean',
+      options: {
+        layout: 'checkbox',
+      }
+    },
     defineField({
         name: 'url',
         title: 'URL',
         type: 'url',
     }),
-
     defineField({
         name: 'category',
         title: 'Category',
         type: 'array',
         of: [{type: 'reference', to: {type: 'categories'}}],
     }),
-
     defineField({
         name: 'description',
         title: 'Description',
         type: 'blockContent',
     }),
   ],
+  initialValue: {
+    isSVG: false,
+  },
 })

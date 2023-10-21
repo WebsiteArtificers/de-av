@@ -10,8 +10,8 @@ export const client = createClient({
   token,
 })
 
-export const partners = `*[_type == "document"]{
-  title,
+export const partners = `*[_type == "partners"]{
+  company,
   slug,
   logo {
     asset->{
@@ -19,6 +19,7 @@ export const partners = `*[_type == "document"]{
     }
   },
   url,
+  isSVG,
   category[]->,
   description,
 }`

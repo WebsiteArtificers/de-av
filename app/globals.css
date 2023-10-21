@@ -63,12 +63,12 @@ button {
 
 .button__secondary {
   color: var(--background);
-  background: var(--text);
-  border: .15vw solid var(--text);
+  background: var(--secondary);
+  border: .15vw solid var(--secondary);
 }
 
 .button__secondary:hover {
-  box-shadow: .1vw .1vw 1vw var(--text);
+  box-shadow: .1vw .1vw 1vw var(--secondary);
 }
 
 .button__tertiary {

@@ -1,0 +1,62 @@
+.diagram__container {
+    display: grid;
+    grid-template-columns: auto 15vw auto;
+    grid-template-areas: 
+        ". illustration audio"
+        "visual illustration ."
+        ". illustration upgrade"
+    ;
+    padding-bottom: 3vw;
+}
+
+.diagram__subcontainer {
+    width: 80%;
+    margin: auto;
+}
+
+.audio {
+    grid-area: audio;
+}
+
+.diagram__subcontainer.visual {
+    text-align: right;
+    margin: auto;
+}
+
+.visual {
+    grid-area: visual;
+}
+
+.upgrade {
+    grid-area: upgrade;
+}
+
+.diagram__button {
+    background: var(--darker-background);
+    color: var(--background);
+    border-radius: 2vw;
+    padding: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+    transition: 1s;
+    border: none;
+}
+
+.diagram__button:hover {
+    background: var(--primary);
+}
+
+.diagram__paragraph {
+    color: var(--background);
+    margin-left: 1vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 2vw;
+    width: 80%;
+}
+
+.diagram__paragraph.visual__paragraph {
+    margin-left: auto;
+    margin-right: 1vw;
+}

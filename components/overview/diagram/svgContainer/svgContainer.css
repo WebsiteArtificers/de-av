@@ -1,0 +1,11 @@
+.svg__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    grid-area: illustration;
+    vertical-align: center;
+    width: auto;
+    gap: 3vw;
+    cursor: pointer;
+}
