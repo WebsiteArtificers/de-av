@@ -1,0 +1,183 @@
+.quote__container {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    background: var(--background);
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3vw;
+}
+
+.quote__subcontainer--left {
+    width: 50%;
+}   
+
+.quote__subcontainer--right {
+    width: 50%;
+}
+
+.quote__header {
+    font-weight: 200;
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: var(--secondary);
+}
+
+.quote__header span {
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.quote__paragraph {
+    font-weight: 500;
+    font-size: 1.25vw;
+    margin-bottom: 1.5vw;
+    line-height: 2vw;
+    color: var(--text);
+}
+
+
+.quote__ul {
+    list-style: none;
+    margin-bottom: 1.5vw;
+}
+
+.quote__li {
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1.75vw;
+    color: var(--text);
+}
+
+.quote__li span {
+    color: var(--primary);
+}
+
+.quote__subheader {
+    font-weight: 800;
+    font-size: 1.75vw;
+    margin-bottom: 1.5vw;
+    color: var(--secondary);
+}
+
+.quote__image--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+    flex-grow: 1;
+    gap: 1.5vw;
+}
+
+.quote__image--subcontainer {
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: center;
+    flex-grow: 1;
+    gap: 1.5vw;
+    width: auto;
+}
+
+.quote__image {
+    width: 6vw;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+
+.quote__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    flex-grow: 1;
+    background: var(--secondary-accent);
+    padding: 1.5vw;
+    border-radius: .15vw;
+
+}
+
+.quote__form--container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    vertical-align: center;
+}
+
+.quote__input--container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    vertical-align: center;
+    justify-content: center;
+}
+
+.quote__input--container.container__textarea{
+    width: 100%;
+    margin: auto;
+}
+
+.quote__input--container:nth-child(2) {
+    margin-left: auto;
+}
+
+.quote__form--label {
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: .5vw;
+    color: var(--text);
+}
+
+.quote__form--input {
+    outline: none;
+    background: var(--background);
+    border: .1vw solid var(--accent);
+    border-radius: .25vw;
+    font-size: 1vw;
+    padding: .5vw;
+    font-weight: 400;
+    cursor: text;
+    transition: .5s;
+}
+
+.quote__form--input::placeholder {
+    color: var(--accent);
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.quote__form--input:hover, .quote__form--input:focus, .quote__form--input:active {
+    border: .1vw solid var(--tertiary);
+}
+
+.quote__form--textarea {
+    outline: none;
+    background: var(--background);
+    border: .1vw solid var(--accent);
+    border-radius: .25vw;
+    font-size: 1vw;
+    padding: .5vw;
+    font-weight: 400;
+    cursor: text;
+    transition: .5s;
+    height: 15vw;
+}
+
+.quote__form--textarea::placeholder {
+    color: var(--accent);
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.quote__form--textarea:hover, .quote__form--textarea:focus, .quote__form--textarea:active {
+    border: .1vw solid var(--tertiary);
+}
+
+.quote__form--button {
+    margin-top: auto;
+    font-size: 1vw;
+    font-weight: 400;
+}

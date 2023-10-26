@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export default function Hero() {
     return (
         <div className='hero__container'>
-            <div className='hero__subcontainer hero__left'>
+            <div className='hero__subcontainer'>
                 <motion.h2 animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__subheader'>Supercharge</motion.h2>
                 <motion.h1 transition={{ delay: .5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__header'>
                     audio and visual performance
@@ -17,9 +17,6 @@ export default function Hero() {
                     <motion.button transition={{ delay: 1.5 }} animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__button button__quaternary right__button'>Our Expertise</motion.button>
                 </div>
             </div>
-            <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} className='hero__subcontainer hero__right'>
-                <Image className='hero__image' width={3200} height={2800} alt='Image of audio and visual services' src='/images/hero.png'/>
-            </motion.div>
         </div>
     )
 }

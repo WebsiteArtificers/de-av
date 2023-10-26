@@ -6,9 +6,9 @@
 .overview__header {
     padding-bottom: 3vw;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 100;
-    color: var(--primary)
+    color: var(--background);
 }
 
 .overview__subheader {

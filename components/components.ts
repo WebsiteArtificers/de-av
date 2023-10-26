@@ -4,3 +4,5 @@ export { default as Footer } from './footer/Footer';
 export { default as Partners } from './partners/Partners';
 export { default as More } from './more/More';
 export { default as Overview } from './overview/Overview';
+export { default as Product } from './product/Product';
+export { default as Quote } from './quote/Quote';

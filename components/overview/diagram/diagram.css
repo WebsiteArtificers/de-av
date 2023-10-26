@@ -1,6 +1,6 @@
 .diagram__container {
     display: grid;
-    grid-template-columns: auto 15vw auto;
+    grid-template-columns: auto 18vw auto;
     grid-template-areas: 
         ". illustration audio"
         "visual illustration ."

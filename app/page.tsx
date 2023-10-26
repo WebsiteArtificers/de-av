@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 
 import 
         { 
-          Hero, Partners, More, Overview
+          Hero, Partners, More, Overview, Product, Quote
         }
 from '@/components/components'
 
@@ -24,6 +24,8 @@ export default async function Home() {
       <Partners />
       <More />
       <Overview />
+      <Product />
+      <Quote />
     </Suspense>
   )
 }
