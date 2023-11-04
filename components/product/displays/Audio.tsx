@@ -8,7 +8,7 @@ export default function Audio() {
         <div className='displays__subcontainer'>
             <div className='displays__subcontainer--left'>
                 <p className='displays__left--paragraph'>
-                    <a>Audio Technology:</a> Have you noticed that humans prioritize audio quality during a production over most other things? That&apos;s why companies like YouTube maintain audio quality in their videos over visual quality in areas of poor connection. That's why research shows it&apos;s harder to focus in loud areas. Audio quality is crucial.
+                    <a>Audio Technology:</a> Have you noticed that humans prioritize audio quality during a production over most other things? That&apos;s why companies like YouTube maintain audio quality in their videos over visual quality in areas of poor connection. That&apos;s why research shows it&apos;s harder to focus in loud areas. Audio quality is crucial.
                 </p>
                 <ul className='displays__left--ul'>
                     <li className='displays__left--li'>
