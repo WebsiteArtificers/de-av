@@ -6,12 +6,12 @@ export default function Resources() {
             <h1 className='footerComponent__header' data-resources>Resources</h1>
             <ul className='footerComponent__ul'>
                 <li className='footerComponent__li'>
-                    <a className='footerComponent__link'>
+                    <a className='footerComponent__link' href='/blog'>
                         Blog
                     </a>
                 </li>
                 <li className='footerComponent__li'>
-                    <a className='footerComponent__link'>
+                    <a className='footerComponent__link' href='/partners'>
                         Partners
                     </a>
                 </li>

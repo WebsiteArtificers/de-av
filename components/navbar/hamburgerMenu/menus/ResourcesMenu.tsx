@@ -5,7 +5,7 @@ export default function Resources() {
         <div className='hamburgerMenu__container'>
             <div className='hamburgerMenu__subcontainer'>
                 <h1 className='hamburgerMenu__subcontainer--header'>Discover</h1>
-                <a className='hamburgerMenu__subcontainer--link'>
+                <a className='hamburgerMenu__subcontainer--link' href='/blog'>
                     <h2 className='hamburgerMenu__subcontainer--subheader'>Blog</h2>
                     <p className='hamburgerMenu__subcontainer--description'>Regular industry insights</p>
                 </a>

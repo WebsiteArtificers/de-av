@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 
 import 
         { 
-          Hero, Partners, More, Overview, Product, Quote
+          Hero, Partners, More, Overview, Product, Quote, Media, Navbar, Footer, Reviews
         }
 from '@/components/components'
 
@@ -20,12 +20,16 @@ export default async function Home() {
 
   return (
     <Suspense>
+      <Navbar />
       <Hero />
       <Partners />
       <More />
       <Overview />
       <Product />
       <Quote />
+      <Media />
+      <Reviews />
+      <Footer />
     </Suspense>
   )
 }

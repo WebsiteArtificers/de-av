@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.5.0",
     "@sanity/image-url": "^1.0.2",
+    "@sanity/types": "^3.19.1",
+    "@sanity/validation": "^3.14.4",
     "@sanity/vision": "^3.18.0",
     "@supabase/auth-helpers-nextjs": "^0.8.1",
     "@supabase/supabase-js": "^2.38.0",
@@ -23,6 +26,7 @@
     "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "next-sanity": "^5.5.7",
+    "nodemailer": "^6.9.7",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^9.2.0",
     "react": "18.2.0",
@@ -31,7 +35,8 @@
     "styled-components": "5.2",
     "suspense": "^0.0.48",
     "tailwindcss": "^3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/react": "18.2.12"

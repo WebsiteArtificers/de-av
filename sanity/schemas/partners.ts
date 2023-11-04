@@ -29,9 +29,17 @@ export default defineType({
           hotspot: true,
         },
     }),
+    defineField({
+      name: 'image',
+      title: 'Collaboration Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
     {
       name: 'isSVG',
-      title: 'Is the image an SVG file?',
+      title: 'Is the image an SVG file? Does the file name end in ".svg"?',
       type: 'boolean',
       options: {
         layout: 'checkbox',
@@ -49,10 +57,20 @@ export default defineType({
         of: [{type: 'reference', to: {type: 'categories'}}],
     }),
     defineField({
-        name: 'description',
-        title: 'Description',
+      name: 'title',
+      title: 'Create a short and catchy title or header.',
+      type: 'string',
+  }),
+    defineField({
+        name: 'preview',
+        title: 'Preview',
         type: 'blockContent',
     }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
+    })
   ],
   initialValue: {
     isSVG: false,

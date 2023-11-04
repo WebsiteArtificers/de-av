@@ -6,3 +6,5 @@ export { default as More } from './more/More';
 export { default as Overview } from './overview/Overview';
 export { default as Product } from './product/Product';
 export { default as Quote } from './quote/Quote';
+export { default as Media } from './media/Media';
+export { default as Reviews } from './reviews/Reviews';

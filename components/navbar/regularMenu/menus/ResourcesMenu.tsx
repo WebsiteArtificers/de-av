@@ -5,11 +5,11 @@ export default function Resources() {
         <div className='menu__container'>
             <div className='menu__subcontainer'>
                 <h1 className='menu__subcontainer--header'>Discover</h1>
-                <a className='menu__subcontainer--link'>
+                <a className='menu__subcontainer--link' href='/blog'>
                     <h2 className='menu__subcontainer--subheader'>Blog</h2>
                     <p className='menu__subcontainer--description'>Regular industry insights</p>
                 </a>
-                <a className='menu__subcontainer--link'>
+                <a className='menu__subcontainer--link' href='/partners'>
                     <h2 className='menu__subcontainer--subheader'>Partners</h2>
                     <p className='menu__subcontainer--description'>Trusted and vetted partners</p>
                 </a>

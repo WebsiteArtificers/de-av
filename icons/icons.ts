@@ -8,3 +8,4 @@ export { default as LinkedIn } from './social/LinkedIn';
 export { default as Audio } from './audio/Audio';
 export { default as Visual } from './visual/Visual';
 export { default as Maintenance } from './maintenance/Maintenance';
+export { default as Alert } from './alert/Alert';

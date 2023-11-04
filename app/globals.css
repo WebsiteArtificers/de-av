@@ -5,7 +5,7 @@
 :root {
   --font-family: inter, acumin-pro, sans-serif;
 
-  --text: #010304;
+  --text: #000d13;
   --background: #E2F3FF;
   --darker-background: #000f17;
   --primary: #5D9BC6;
@@ -13,7 +13,7 @@
   --secondary: #003356;
   --secondary-accent: #b2cded;
   --tertiary: #7961d0;
-  --tertiary-accent: rgb(0, 69, 116);
+  --tertiary-accent: #36276e;
   --quaternary: #006265;
   --quaternary-accent: #66b2b5;
   --black: #000517;

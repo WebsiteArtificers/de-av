@@ -1,0 +1,117 @@
+.reviews__container {
+    background: var(--primary);
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+.reviews__width--container {
+    width: 70%;
+    margin: auto;
+}
+
+.reviews__header {
+    font-size: 2vw;
+    color: var(--secondary);
+    font-weight: 800;
+}
+
+.reviews__subheader {
+    font-size: 3vw;
+    margin-bottom: 3vw;
+    color: var(--text);
+    font-weight: 200;
+}
+
+.reviews__subheader span {
+    font-weight: 800;
+}
+
+.reviews__subcontainer {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    gap: 3vw;
+}
+
+.reviews__subcontainer--left {
+    width: 50%;
+    height: 25vw;
+}
+
+.reviews__container--left__image {
+    width: 100%;
+    height: 100%;
+    border-radius: .25vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviews__subcontainer--right {
+    width: 50%;
+    margin-top: 3vw;
+}
+
+.reviews__subcontainer--right__paragraph {
+    font-size: 1.5vw;
+    color: var(--text);
+    font-weight: 200;
+    line-height: 2.25vw;
+    margin-bottom: 2vw;
+}
+
+.reviews__subcontainer--right__button {
+    font-size: 1.5vw;
+}
+
+.reviews__subcontainer--reviews {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5vw;
+}
+
+.reviews__review--container {
+    padding: 1vw;
+    background: var(--secondary);
+    width: 25%;
+    border-radius: .25vw;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: .1vw .1vw 1vw transparent;
+    border: .15vw solid var(--secondary);
+}
+
+.reviews__review--container:hover {
+    box-shadow: .1vw .1vw 1vw var(--secondary);
+    border: .15vw solid var(--tertiary);
+}
+
+.reviews__review--header {
+    font-size: 1.25vw;
+    margin-bottom: 1vw;
+    color: var(--secondary-accent);
+    font-weight: 800;
+}
+
+.reviews__review--quote {
+    margin-bottom: 1vw;
+    color: var(--secondary-accent);
+    font-size: 1vw;
+    font-weight: 200;
+    line-height: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+.reviews__review--writer {
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 800;
+    color: var(--background);
+}

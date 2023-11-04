@@ -47,9 +47,9 @@ export default function Navbar() {
     return (
         <>
             <nav className='navbar__container'>
-                <div className='navbar__logo--container'>
+                <a className='navbar__logo--container' href='/'>
                     <Logo />
-                </div>
+                </a>
                 <div className='navbar__links--container'>
                     {isScreenSmall ? <Hamburger isOpen={isOpen} onClick={handleHamburgerClick} /> : <Regular />}
                 </div>

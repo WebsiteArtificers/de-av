@@ -131,6 +131,10 @@
     color: var(--text);
 }
 
+.quote__form--label span {
+    font-weight: 200;
+}
+
 .quote__form--input {
     outline: none;
     background: var(--background);
@@ -141,6 +145,10 @@
     font-weight: 400;
     cursor: text;
     transition: .5s;
+}
+
+#size {
+    cursor: pointer;
 }
 
 .quote__form--input::placeholder {
